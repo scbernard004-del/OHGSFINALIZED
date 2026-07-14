@@ -1,0 +1,188 @@
+
+/* OHGS ULTIMATE BRAND HEADER FIX - loaded last */
+html { scroll-padding-top: 88px !important; }
+body { overflow-x: hidden !important; }
+.site-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+.site-header .brand,
+.site-header .ohgs-mobile-pro-brand{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:12px !important;
+  min-width:0 !important;
+  text-decoration:none !important;
+  overflow:visible !important;
+  flex:none !important;
+}
+.site-header .ohgs-mobile-pro-icon,
+.site-header .brand img{
+  display:block !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  border-radius:999px !important;
+  background:#fff !important;
+  box-shadow:0 8px 22px rgba(0,0,0,.20) !important;
+  padding:0 !important;
+  margin:0 !important;
+  transform:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  max-width:none !important;
+}
+.site-header .ohgs-mobile-pro-copy{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  line-height:1 !important;
+  min-width:0 !important;
+  margin-top:1px !important;
+}
+.site-header .ohgs-mobile-pro-title{
+  display:block !important;
+  font-weight:900 !important;
+  letter-spacing:.08em !important;
+  color:#ffffff !important;
+  white-space:nowrap !important;
+}
+.site-header .ohgs-mobile-pro-subtitle{
+  display:block !important;
+  font-weight:800 !important;
+  letter-spacing:.22em !important;
+  color:#19bfff !important;
+  white-space:nowrap !important;
+}
+body.light .site-header .ohgs-mobile-pro-title,
+html[data-theme="light"] .site-header .ohgs-mobile-pro-title,
+body.theme-light .site-header .ohgs-mobile-pro-title{
+  color:#07111f !important;
+}
+body.light .site-header .ohgs-mobile-pro-subtitle,
+html[data-theme="light"] .site-header .ohgs-mobile-pro-subtitle,
+body.theme-light .site-header .ohgs-mobile-pro-subtitle{
+  color:#0a7fba !important;
+}
+
+/* desktop */
+@media (min-width: 981px){
+  .site-header{
+    min-height:86px !important;
+    height:86px !important;
+    display:grid !important;
+    grid-template-columns:300px minmax(480px,1fr) auto !important;
+    align-items:center !important;
+    column-gap:18px !important;
+    padding:10px 24px !important;
+  }
+  body{ padding-top: 0 !important; }
+  .site-header .brand,
+  .site-header .ohgs-mobile-pro-brand{
+    width:300px !important;
+    min-width:300px !important;
+    max-width:300px !important;
+    height:62px !important;
+  }
+  .site-header .ohgs-mobile-pro-icon,
+  .site-header .brand img{
+    width:62px !important;
+    height:62px !important;
+    min-width:62px !important;
+    min-height:62px !important;
+  }
+  .site-header .ohgs-mobile-pro-title{ font-size:31px !important; }
+  .site-header .ohgs-mobile-pro-subtitle{ font-size:9px !important; }
+}
+
+@media (min-width: 981px) and (max-width: 1200px){
+  .site-header{ grid-template-columns:270px minmax(360px,1fr) auto !important; column-gap:12px !important; }
+  .site-header .brand,
+  .site-header .ohgs-mobile-pro-brand{ width:270px !important; min-width:270px !important; max-width:270px !important; }
+  .site-header .ohgs-mobile-pro-icon,
+  .site-header .brand img{ width:58px !important; height:58px !important; min-width:58px !important; min-height:58px !important; }
+  .site-header .ohgs-mobile-pro-title{ font-size:27px !important; }
+  .site-header .ohgs-mobile-pro-subtitle{ font-size:8px !important; }
+}
+
+/* tablet and mobile */
+@media (max-width: 980px){
+  .site-header,
+  .site-header.scrolled{
+    position:sticky !important;
+    top:0 !important;
+    z-index:9999 !important;
+    min-height:78px !important;
+    height:78px !important;
+    display:grid !important;
+    grid-template-columns:minmax(190px,1fr) 44px auto !important;
+    grid-template-areas:"brand menu actions" !important;
+    align-items:center !important;
+    gap:8px !important;
+    padding:8px 10px !important;
+  }
+  .site-header .brand,
+  .site-header .ohgs-mobile-pro-brand{
+    grid-area:brand !important;
+    width:190px !important;
+    min-width:190px !important;
+    max-width:190px !important;
+    height:58px !important;
+    gap:10px !important;
+  }
+  .site-header .ohgs-mobile-pro-icon,
+  .site-header .brand img{
+    width:50px !important;
+    height:50px !important;
+    min-width:50px !important;
+    min-height:50px !important;
+  }
+  .site-header .ohgs-mobile-pro-title{ font-size:22px !important; }
+  .site-header .ohgs-mobile-pro-subtitle{ font-size:7.5px !important; }
+  .site-header .menu-toggle{ grid-area:menu !important; width:44px !important; height:44px !important; min-width:44px !important; }
+  .site-header .header-actions{ grid-area:actions !important; justify-self:end !important; display:flex !important; align-items:center !important; gap:6px !important; min-width:max-content !important; }
+  .site-header .theme-toggle{ width:32px !important; min-width:32px !important; height:32px !important; padding:0 !important; font-size:0 !important; position:relative !important; }
+  .site-header .theme-toggle::before{ content:'☾'; position:absolute; inset:0; display:grid; place-items:center; font-size:15px; color:#facc15; }
+  body.light .site-header .theme-toggle::before,
+  html[data-theme="light"] .site-header .theme-toggle::before,
+  body.theme-light .site-header .theme-toggle::before{ content:'☀'; color:#f59e0b; }
+  .site-header .lang-toggle{ width:52px !important; min-width:52px !important; height:32px !important; padding:0 4px !important; font-size:8px !important; }
+  .site-header .whatsapp{ width:60px !important; min-width:60px !important; height:32px !important; padding:0 7px !important; font-size:8px !important; }
+}
+
+@media (max-width: 420px){
+  .site-header,
+  .site-header.scrolled{
+    grid-template-columns:minmax(180px,1fr) 42px auto !important;
+    gap:6px !important;
+    padding:7px 8px !important;
+    min-height:74px !important;
+    height:74px !important;
+  }
+  .site-header .brand,
+  .site-header .ohgs-mobile-pro-brand{ width:180px !important; min-width:180px !important; max-width:180px !important; gap:8px !important; }
+  .site-header .ohgs-mobile-pro-icon,
+  .site-header .brand img{ width:46px !important; height:46px !important; min-width:46px !important; min-height:46px !important; }
+  .site-header .ohgs-mobile-pro-title{ font-size:20px !important; }
+  .site-header .ohgs-mobile-pro-subtitle{ font-size:6.8px !important; }
+  .site-header .menu-toggle{ width:42px !important; height:42px !important; min-width:42px !important; }
+  .site-header .theme-toggle{ width:30px !important; min-width:30px !important; height:30px !important; }
+  .site-header .lang-toggle{ width:46px !important; min-width:46px !important; height:30px !important; font-size:7.5px !important; }
+  .site-header .whatsapp{ width:56px !important; min-width:56px !important; height:30px !important; font-size:7px !important; }
+}
+
+@media (max-width: 360px){
+  .site-header,
+  .site-header.scrolled{ grid-template-columns:minmax(170px,1fr) 40px auto !important; }
+  .site-header .brand,
+  .site-header .ohgs-mobile-pro-brand{ width:170px !important; min-width:170px !important; max-width:170px !important; }
+  .site-header .ohgs-mobile-pro-icon,
+  .site-header .brand img{ width:43px !important; height:43px !important; min-width:43px !important; min-height:43px !important; }
+  .site-header .ohgs-mobile-pro-title{ font-size:18px !important; }
+  .site-header .ohgs-mobile-pro-subtitle{ font-size:6px !important; }
+  .site-header .lang-toggle{ width:42px !important; min-width:42px !important; }
+  .site-header .whatsapp{ width:52px !important; min-width:52px !important; }
+}

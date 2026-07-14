@@ -1,0 +1,219 @@
+
+/* OHGS FINAL MOBILE HEADER COMPACT FIX */
+@media(max-width:980px){
+  :root{--ohgs-stable-header:60px!important}
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+    min-height:60px!important;
+    height:60px!important;
+    padding:5px 8px!important;
+    gap:5px!important;
+    display:grid!important;
+    grid-template-columns:minmax(112px,auto) 1fr auto auto!important;
+    align-items:center!important;
+    justify-content:normal!important;
+    overflow:visible!important;
+  }
+  main{padding-top:60px!important}
+  .ohgs-final-brand{
+    grid-column:1!important;
+    min-width:0!important;
+    max-width:132px!important;
+    width:132px!important;
+    gap:6px!important;
+    justify-self:start!important;
+  }
+  .ohgs-final-brand-icon{
+    width:36px!important;
+    height:36px!important;
+    min-width:36px!important;
+    padding:1px!important;
+  }
+  .ohgs-final-brand-title{
+    font-size:16px!important;
+    line-height:.9!important;
+    letter-spacing:.07em!important;
+  }
+  .ohgs-final-brand-subtitle{
+    font-size:4.7px!important;
+    margin-top:3px!important;
+    letter-spacing:.12em!important;
+  }
+  .header-actions{
+    grid-column:3!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:3px!important;
+    margin-left:0!important;
+    justify-self:end!important;
+    width:auto!important;
+  }
+  .theme-toggle,.lang-toggle,.whatsapp{
+    height:32px!important;
+    min-height:32px!important;
+    border-radius:999px!important;
+    padding:0!important;
+    flex:0 0 auto!important;
+  }
+  .theme-toggle{
+    width:31px!important;
+    min-width:31px!important;
+    max-width:31px!important;
+  }
+  .theme-toggle .ohgs-theme-icon{font-size:16px!important}
+  .lang-toggle{
+    width:42px!important;
+    min-width:42px!important;
+    max-width:42px!important;
+    font-size:6px!important;
+    letter-spacing:-.03em!important;
+  }
+  .whatsapp{
+    width:52px!important;
+    min-width:52px!important;
+    max-width:52px!important;
+    font-size:6px!important;
+    letter-spacing:-.03em!important;
+  }
+  .menu-toggle{
+    grid-column:4!important;
+    display:grid!important;
+    place-items:center!important;
+    width:34px!important;
+    min-width:34px!important;
+    height:34px!important;
+    min-height:34px!important;
+    border-radius:12px!important;
+    margin-left:3px!important;
+    justify-self:end!important;
+    order:initial!important;
+  }
+  .menu-toggle span{
+    width:16px!important;
+    height:2px!important;
+  }
+  .menu-toggle span:nth-child(1){top:10px!important}
+  .menu-toggle span:nth-child(2){top:16px!important}
+  .menu-toggle span:nth-child(3){top:22px!important}
+  .menu-toggle.is-open span:nth-child(1),.site-header.menu-open .menu-toggle span:nth-child(1),
+  .menu-toggle.is-open span:nth-child(3),.site-header.menu-open .menu-toggle span:nth-child(3){
+    top:16px!important;
+  }
+  .nav-links{
+    grid-column:1 / -1!important;
+    top:68px!important;
+    left:10px!important;
+    right:10px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled{
+    min-height:54px!important;
+    height:54px!important;
+    padding:4px 8px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand{
+    width:118px!important;
+    max-width:118px!important;
+    gap:5px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-icon{
+    width:32px!important;
+    height:32px!important;
+    min-width:32px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-title{
+    font-size:14px!important;
+    letter-spacing:.055em!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-subtitle{
+    font-size:4px!important;
+    letter-spacing:.10em!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .theme-toggle,
+  .site-header.ohgs-ultimate-scrolled .lang-toggle,
+  .site-header.ohgs-ultimate-scrolled .whatsapp,
+  .site-header.ohgs-ultimate-scrolled .menu-toggle{
+    transform:none!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .nav-links{top:62px!important}
+}
+@media(max-width:430px){
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+    grid-template-columns:minmax(104px,auto) 1fr auto auto!important;
+    padding-left:6px!important;
+    padding-right:6px!important;
+    gap:3px!important;
+  }
+  .ohgs-final-brand{
+    width:118px!important;
+    max-width:118px!important;
+    gap:5px!important;
+  }
+  .ohgs-final-brand-icon{
+    width:32px!important;
+    height:32px!important;
+    min-width:32px!important;
+  }
+  .ohgs-final-brand-title{
+    font-size:14px!important;
+    letter-spacing:.055em!important;
+  }
+  .ohgs-final-brand-subtitle{
+    font-size:4px!important;
+    letter-spacing:.09em!important;
+  }
+  .header-actions{gap:2px!important}
+  .theme-toggle{
+    width:28px!important;
+    min-width:28px!important;
+    max-width:28px!important;
+  }
+  .theme-toggle .ohgs-theme-icon{font-size:14px!important}
+  .lang-toggle{
+    width:37px!important;
+    min-width:37px!important;
+    max-width:37px!important;
+    font-size:5.4px!important;
+  }
+  .whatsapp{
+    width:47px!important;
+    min-width:47px!important;
+    max-width:47px!important;
+    font-size:5.4px!important;
+  }
+  .menu-toggle{
+    width:32px!important;
+    min-width:32px!important;
+    height:32px!important;
+    min-height:32px!important;
+    margin-left:2px!important;
+  }
+  .nav-links{top:66px!important}
+}
+@media(max-width:370px){
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+    grid-template-columns:minmax(92px,auto) 1fr auto auto!important;
+    padding-left:5px!important;
+    padding-right:5px!important;
+  }
+  .ohgs-final-brand{
+    width:104px!important;
+    max-width:104px!important;
+  }
+  .ohgs-final-brand-icon{
+    width:30px!important;
+    height:30px!important;
+    min-width:30px!important;
+  }
+  .ohgs-final-brand-title{font-size:12.5px!important}
+  .ohgs-final-brand-subtitle{display:none!important}
+  .lang-toggle{
+    width:34px!important;
+    min-width:34px!important;
+    max-width:34px!important;
+  }
+  .whatsapp{
+    width:43px!important;
+    min-width:43px!important;
+    max-width:43px!important;
+  }
+}

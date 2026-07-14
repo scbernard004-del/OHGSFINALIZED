@@ -1,0 +1,9 @@
+{
+  "name": "olotu-hardware-ohgs-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OHGS Hardware website for GitHub and Vercel",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

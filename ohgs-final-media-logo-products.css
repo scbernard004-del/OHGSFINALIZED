@@ -1,0 +1,35 @@
+
+/* ==========================================================
+   OHGS FINAL LOGO + MEDIA + RESPONSIVE POLISH
+   ========================================================== */
+.loader,#loader{display:grid!important;place-items:center!important}
+.loader>div,#loader>div{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;gap:14px!important;width:min(92vw,340px)!important;margin:0 auto!important;padding:18px!important}
+.load-core{margin:0 auto!important}
+.load-core img,.loader img,#loader img{object-fit:contain!important;object-position:center!important}
+.loader p,#loader p,.ohgs-loader-text{width:100%!important;max-width:300px!important;text-align:center!important;margin:0 auto!important;line-height:1.45!important;font-weight:850!important}
+.site-header .brand img,.site-header .ohgs-final-brand-icon,.footer img,.brand-panel img{object-fit:contain!important;object-position:center!important;background:transparent!important;border-radius:16px!important;padding:0!important}
+.site-header .brand img,.site-header .ohgs-final-brand-icon{filter:drop-shadow(0 8px 20px rgba(0,0,0,.28))!important}
+.site-header .theme-toggle{min-width:56px!important;font-size:0!important;position:relative!important}
+.site-header .theme-toggle::before{content:"🌙"!important;position:absolute!important;inset:0!important;display:grid!important;place-items:center!important;font-size:19px!important;line-height:1!important}
+body.light .site-header .theme-toggle::before,html.light .site-header .theme-toggle::before,html[data-theme="light"] .site-header .theme-toggle::before{content:"☀️"!important}
+.ohgs-product-showcase-grid,.ohgs-customer-story-grid,.ohgs-final-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:24px}
+.ohgs-product-showcase-card,.ohgs-customer-story-card,.ohgs-final-video-card{overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
+.ohgs-product-showcase-card img,.ohgs-customer-story-card img{width:100%;height:260px;object-fit:cover;background:#fff}
+.ohgs-product-showcase-card .card-body,.ohgs-customer-story-card .card-body{padding:18px}
+.ohgs-product-showcase-card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+.ohgs-product-showcase-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.ohgs-final-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ohgs-final-video-card{padding:16px}
+.ohgs-final-video-card video{width:100%;border-radius:18px;display:block;background:#000}
+.ohgs-final-video-card h3{margin:14px 0 8px}
+@media(max-width:980px){
+  .ohgs-product-showcase-grid,.ohgs-customer-story-grid,.ohgs-final-video-grid{grid-template-columns:1fr}
+  .ohgs-product-showcase-card img,.ohgs-customer-story-card img{height:245px}
+  .site-header .theme-toggle{width:38px!important;min-width:38px!important;max-width:38px!important}
+  .site-header .theme-toggle::before{font-size:18px!important}
+}
+@media(max-width:430px){
+  .ohgs-product-showcase-card img,.ohgs-customer-story-card img{height:235px}
+  .site-header .theme-toggle{width:34px!important;min-width:34px!important;max-width:34px!important}
+  .site-header .theme-toggle::before{font-size:17px!important}
+}

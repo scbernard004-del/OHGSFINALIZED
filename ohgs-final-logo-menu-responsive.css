@@ -1,0 +1,383 @@
+
+/* OHGS FINAL HEADER LOGO + MOBILE MENU POLISH */
+.site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+  min-height:84px!important;
+  padding:12px clamp(14px,3vw,34px)!important;
+  gap:18px!important;
+  overflow:visible!important;
+}
+.ohgs-final-brand{
+  min-width:260px!important;
+  max-width:340px!important;
+  gap:14px!important;
+}
+.ohgs-final-brand-icon{
+  width:64px!important;
+  height:64px!important;
+  min-width:64px!important;
+  border-radius:999px!important;
+  background:#fff!important;
+  padding:3px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  box-shadow:0 12px 26px rgba(0,0,0,.28),0 0 0 1px rgba(255,255,255,.22)!important;
+  filter:none!important;
+}
+.ohgs-final-brand-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  min-width:0!important;
+  transform:translateY(1px)!important;
+}
+.ohgs-final-brand-title{
+  font-size:36px!important;
+  line-height:.88!important;
+  letter-spacing:.16em!important;
+  font-weight:950!important;
+  color:#fff!important;
+  text-shadow:0 2px 14px rgba(0,0,0,.22)!important;
+}
+body.light .ohgs-final-brand-title,html[data-theme="light"] .ohgs-final-brand-title{
+  color:#07111f!important;
+  text-shadow:none!important;
+}
+.ohgs-final-brand-subtitle{
+  font-size:10px!important;
+  line-height:1!important;
+  margin-top:7px!important;
+  letter-spacing:.34em!important;
+  font-weight:950!important;
+  color:#00bfff!important;
+}
+.site-header.ohgs-ultimate-scrolled{
+  min-height:68px!important;
+  padding-top:7px!important;
+  padding-bottom:7px!important;
+}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand{gap:11px!important}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand-icon{
+  width:50px!important;
+  height:50px!important;
+  min-width:50px!important;
+  transform:scale(.96) rotate(-2deg)!important;
+}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand-title{
+  font-size:28px!important;
+  letter-spacing:.14em!important;
+}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand-subtitle{
+  font-size:7.5px!important;
+  letter-spacing:.28em!important;
+  opacity:.95!important;
+}
+.menu-toggle{
+  position:relative!important;
+  display:none!important;
+  width:44px!important;
+  height:44px!important;
+  min-width:44px!important;
+  padding:0!important;
+  border-radius:16px!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.05))!important;
+  box-shadow:0 10px 24px rgba(0,0,0,.18)!important;
+  cursor:pointer!important;
+  overflow:hidden!important;
+}
+body.light .menu-toggle,html[data-theme="light"] .menu-toggle{
+  border-color:rgba(15,23,42,.14)!important;
+  background:linear-gradient(145deg,rgba(15,23,42,.08),rgba(15,23,42,.03))!important;
+}
+.menu-toggle span{
+  position:absolute!important;
+  left:50%!important;
+  width:20px!important;
+  height:2.4px!important;
+  margin:0!important;
+  border-radius:999px!important;
+  background:#fff!important;
+  transform:translateX(-50%)!important;
+  transition:top .24s ease,transform .24s ease,opacity .18s ease,background .2s ease!important;
+}
+body.light .menu-toggle span,html[data-theme="light"] .menu-toggle span{background:#07111f!important}
+.menu-toggle span:nth-child(1){top:14px!important}
+.menu-toggle span:nth-child(2){top:21px!important}
+.menu-toggle span:nth-child(3){top:28px!important}
+.menu-toggle.is-open,.site-header.menu-open .menu-toggle{
+  background:linear-gradient(135deg,#00bfff,#0077b6)!important;
+  border-color:rgba(255,255,255,.22)!important;
+}
+.menu-toggle.is-open span,.site-header.menu-open .menu-toggle span{background:#fff!important}
+.menu-toggle.is-open span:nth-child(1),.site-header.menu-open .menu-toggle span:nth-child(1){
+  top:21px!important;
+  transform:translateX(-50%) rotate(45deg)!important;
+}
+.menu-toggle.is-open span:nth-child(2),.site-header.menu-open .menu-toggle span:nth-child(2){
+  opacity:0!important;
+  transform:translateX(-50%) scaleX(.2)!important;
+}
+.menu-toggle.is-open span:nth-child(3),.site-header.menu-open .menu-toggle span:nth-child(3){
+  top:21px!important;
+  transform:translateX(-50%) rotate(-45deg)!important;
+}
+@media(max-width:980px){
+  :root{--ohgs-stable-header:72px!important}
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+    min-height:72px!important;
+    padding:8px 10px!important;
+    gap:8px!important;
+  }
+  main{padding-top:72px!important}
+  .ohgs-final-brand{
+    min-width:0!important;
+    max-width:178px!important;
+    gap:9px!important;
+  }
+  .ohgs-final-brand-icon{
+    width:48px!important;
+    height:48px!important;
+    min-width:48px!important;
+    padding:2px!important;
+  }
+  .ohgs-final-brand-title{
+    font-size:22px!important;
+    letter-spacing:.115em!important;
+    line-height:.9!important;
+  }
+  .ohgs-final-brand-subtitle{
+    font-size:6.5px!important;
+    letter-spacing:.22em!important;
+    margin-top:5px!important;
+  }
+  .menu-toggle{
+    display:grid!important;
+    place-items:center!important;
+    order:3!important;
+  }
+  .header-actions{
+    gap:5px!important;
+    margin-left:auto!important;
+  }
+  .theme-toggle{
+    width:36px!important;
+    min-width:36px!important;
+    max-width:36px!important;
+    height:36px!important;
+    min-height:36px!important;
+  }
+  .lang-toggle{
+    width:50px!important;
+    min-width:50px!important;
+    max-width:50px!important;
+    height:36px!important;
+    min-height:36px!important;
+    font-size:7.5px!important;
+    padding:0!important;
+  }
+  .whatsapp{
+    width:64px!important;
+    min-width:64px!important;
+    max-width:64px!important;
+    height:36px!important;
+    min-height:36px!important;
+    font-size:7.5px!important;
+    padding:0!important;
+  }
+  .nav-links{
+    top:82px!important;
+    left:12px!important;
+    right:12px!important;
+    border-radius:24px!important;
+    padding:14px!important;
+    background:radial-gradient(circle at top left,rgba(0,191,255,.16),transparent 18rem),rgba(3,10,22,.985)!important;
+    border:1px solid rgba(255,255,255,.14)!important;
+    box-shadow:0 22px 58px rgba(0,0,0,.34)!important;
+  }
+  body.light .nav-links,html[data-theme="light"] .nav-links{
+    background:rgba(255,255,255,.985)!important;
+    border-color:rgba(15,23,42,.12)!important;
+  }
+  .nav-links a{
+    min-height:46px!important;
+    border-radius:16px!important;
+    padding:0 14px!important;
+    font-size:14px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled{
+    min-height:62px!important;
+    padding-top:6px!important;
+    padding-bottom:6px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand{
+    max-width:154px!important;
+    gap:7px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-icon{
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-title{
+    font-size:18px!important;
+    letter-spacing:.09em!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-subtitle{
+    font-size:5px!important;
+    letter-spacing:.18em!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .nav-links{top:72px!important}
+  .site-header.ohgs-ultimate-scrolled .menu-toggle{transform:scale(.95)!important}
+}
+@media(max-width:430px){
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+    padding-left:8px!important;
+    padding-right:8px!important;
+  }
+  .ohgs-final-brand{max-width:158px!important}
+  .ohgs-final-brand-icon{
+    width:44px!important;
+    height:44px!important;
+    min-width:44px!important;
+  }
+  .ohgs-final-brand-title{
+    font-size:19px!important;
+    letter-spacing:.095em!important;
+  }
+  .ohgs-final-brand-subtitle{
+    font-size:5.5px!important;
+    letter-spacing:.18em!important;
+  }
+  .menu-toggle{
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    border-radius:14px!important;
+  }
+  .menu-toggle span{width:18px!important}
+  .theme-toggle{
+    width:32px!important;
+    min-width:32px!important;
+    max-width:32px!important;
+  }
+  .lang-toggle{
+    width:45px!important;
+    min-width:45px!important;
+    max-width:45px!important;
+    font-size:6.8px!important;
+  }
+  .whatsapp{
+    width:56px!important;
+    min-width:56px!important;
+    max-width:56px!important;
+    font-size:6.8px!important;
+  }
+}
+@media(max-width:370px){
+  .ohgs-final-brand{
+    max-width:138px!important;
+    gap:6px!important;
+  }
+  .ohgs-final-brand-icon{
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+  }
+  .ohgs-final-brand-title{font-size:16px!important}
+  .ohgs-final-brand-subtitle{font-size:4.8px!important}
+  .header-actions{gap:3px!important}
+}
+
+
+/* FINAL header spacing + fuller logo icon fix */
+
+.ohgs-final-brand-icon{
+  padding:1px!important;
+  background:#fff!important;
+  background-clip:padding-box!important;
+}
+
+@media(max-width:980px){
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{
+    min-height:64px!important;
+    padding:6px 8px!important;
+    gap:6px!important;
+  }
+  main{padding-top:64px!important}
+  .ohgs-final-brand{
+    max-width:144px!important;
+    gap:7px!important;
+  }
+  .ohgs-final-brand-icon{
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    padding:1px!important;
+  }
+  .ohgs-final-brand-title{
+    font-size:18px!important;
+    letter-spacing:.08em!important;
+  }
+  .ohgs-final-brand-subtitle{
+    font-size:5px!important;
+    margin-top:3px!important;
+    letter-spacing:.16em!important;
+  }
+  .header-actions{
+    gap:4px!important;
+  }
+  .theme-toggle,.lang-toggle,.whatsapp,.menu-toggle{
+    height:34px!important;
+    min-height:34px!important;
+  }
+  .theme-toggle{
+    width:34px!important; min-width:34px!important; max-width:34px!important;
+    padding:0!important;
+  }
+  .lang-toggle{
+    width:44px!important; min-width:44px!important; max-width:44px!important;
+    font-size:6.5px!important;
+    padding:0 4px!important;
+  }
+  .whatsapp{
+    width:54px!important; min-width:54px!important; max-width:54px!important;
+    font-size:6.5px!important;
+    padding:0 6px!important;
+  }
+  .menu-toggle{
+    width:38px!important; min-width:38px!important; border-radius:12px!important;
+  }
+  .menu-toggle span:nth-child(1){top:12px!important}
+  .menu-toggle span:nth-child(2){top:18px!important}
+  .menu-toggle span:nth-child(3){top:24px!important}
+  .menu-toggle.is-open span:nth-child(1),.site-header.menu-open .menu-toggle span:nth-child(1),
+  .menu-toggle.is-open span:nth-child(3),.site-header.menu-open .menu-toggle span:nth-child(3){top:18px!important}
+  .nav-links{top:72px!important}
+  .site-header.ohgs-ultimate-scrolled{
+    min-height:56px!important;
+    padding:5px 8px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand{max-width:132px!important;gap:6px!important}
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-icon{
+    width:36px!important;height:36px!important;min-width:36px!important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-title{font-size:16px!important;letter-spacing:.07em!important}
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-subtitle{font-size:4.5px!important;letter-spacing:.14em!important}
+  .site-header.ohgs-ultimate-scrolled .nav-links{top:64px!important}
+}
+@media(max-width:430px){
+  .site-header,header.site-header,.site-header.ohgs-pro-visible-header{padding:5px 6px!important}
+  .ohgs-final-brand{max-width:132px!important;gap:6px!important}
+  .ohgs-final-brand-icon{width:36px!important;height:36px!important;min-width:36px!important}
+  .ohgs-final-brand-title{font-size:16px!important;letter-spacing:.065em!important}
+  .ohgs-final-brand-subtitle{font-size:4.2px!important;letter-spacing:.13em!important}
+  .theme-toggle{width:30px!important;min-width:30px!important;max-width:30px!important}
+  .lang-toggle{width:40px!important;min-width:40px!important;max-width:40px!important;font-size:6px!important}
+  .whatsapp{width:50px!important;min-width:50px!important;max-width:50px!important;font-size:6px!important}
+  .menu-toggle{width:36px!important;min-width:36px!important;height:36px!important;min-height:36px!important}
+  .menu-toggle span{width:16px!important}
+  .menu-toggle span:nth-child(1){top:11px!important}
+  .menu-toggle span:nth-child(2){top:17px!important}
+  .menu-toggle span:nth-child(3){top:23px!important}
+  .menu-toggle.is-open span:nth-child(1),.site-header.menu-open .menu-toggle span:nth-child(1),
+  .menu-toggle.is-open span:nth-child(3),.site-header.menu-open .menu-toggle span:nth-child(3){top:17px!important}
+}

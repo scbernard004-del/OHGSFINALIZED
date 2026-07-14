@@ -1,0 +1,255 @@
+
+/* =========================================================
+   OHGS LOGO ALL PAGES RESPONSIVE FINAL FIX
+   This file loads last and controls header logo on every page.
+   ========================================================= */
+
+.site-header,
+header.site-header{
+  overflow: visible !important;
+}
+
+.site-header .brand,
+header.site-header .brand{
+  flex: 0 0 auto !important;
+  width: 176px !important;
+  min-width: 176px !important;
+  max-width: 176px !important;
+  min-height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  overflow: visible !important;
+  text-decoration: none !important;
+}
+
+.site-header .brand img,
+header.site-header .brand img,
+.site-header a.brand img,
+header.site-header a.brand img{
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  max-width: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  padding: 2px !important;
+  margin: 0 !important;
+  transform: none !important;
+  filter: none !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,.18) !important;
+}
+
+.site-header .brand > span,
+header.site-header .brand > span,
+.site-header .brand-copy,
+header.site-header .brand-copy{
+  min-width: 0 !important;
+  max-width: 110px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+.site-header .brand-title,
+header.site-header .brand-title{
+  display: block !important;
+  color: var(--ohgs-text, var(--text, #eff6ff)) !important;
+  font-size: clamp(15px, 1.35vw, 21px) !important;
+  font-weight: 950 !important;
+  letter-spacing: .11em !important;
+  line-height: .95 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+.site-header .brand-subtitle,
+header.site-header .brand-subtitle{
+  display: block !important;
+  color: var(--ohgs-blue, var(--brand, #00bfff)) !important;
+  font-size: clamp(5px, .58vw, 7px) !important;
+  font-weight: 900 !important;
+  letter-spacing: .17em !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+/* Keep navigation and actions balanced against logo */
+.site-header .nav-links,
+header.site-header .nav-links,
+.site-header #mainMenu,
+header.site-header #mainMenu{
+  min-width: 0 !important;
+}
+
+.site-header .header-actions,
+header.site-header .header-actions{
+  flex: 0 0 auto !important;
+  min-width: max-content !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 7px !important;
+}
+
+/* Light mode clarity */
+body.light .site-header .brand img,
+html.light .site-header .brand img,
+html[data-theme="light"] .site-header .brand img{
+  background: #ffffff !important;
+  box-shadow: 0 5px 16px rgba(15,23,42,.14) !important;
+}
+
+body.light .site-header .brand-title,
+html.light .site-header .brand-title,
+html[data-theme="light"] .site-header .brand-title{
+  color: #07111f !important;
+}
+
+/* Dark mode clarity */
+body:not(.light) .site-header .brand img,
+html:not(.light) .site-header .brand img{
+  background: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,.24) !important;
+}
+
+/* Tablet / mobile */
+@media (max-width: 980px){
+  .site-header,
+  header.site-header,
+  .site-header.scrolled,
+  body.ohgs-scrolled .site-header{
+    grid-template-columns: minmax(118px, 1fr) 40px auto !important;
+    gap: 6px !important;
+  }
+
+  .site-header .brand,
+  header.site-header .brand{
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
+    min-height: 42px !important;
+    gap: 6px !important;
+  }
+
+  .site-header .brand img,
+  header.site-header .brand img,
+  .site-header a.brand img,
+  header.site-header a.brand img{
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    max-width: 34px !important;
+    min-height: 34px !important;
+    max-height: 34px !important;
+    padding: 2px !important;
+  }
+
+  .site-header .brand > span,
+  header.site-header .brand > span,
+  .site-header .brand-copy,
+  header.site-header .brand-copy{
+    max-width: 74px !important;
+  }
+
+  .site-header .brand-title,
+  header.site-header .brand-title{
+    font-size: 13px !important;
+    letter-spacing: .09em !important;
+  }
+
+  .site-header .brand-subtitle,
+  header.site-header .brand-subtitle{
+    font-size: 5px !important;
+    letter-spacing: .13em !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 430px){
+  .site-header,
+  header.site-header,
+  .site-header.scrolled,
+  body.ohgs-scrolled .site-header{
+    grid-template-columns: minmax(98px, 1fr) 38px auto !important;
+    gap: 4px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+
+  .site-header .brand,
+  header.site-header .brand{
+    width: 98px !important;
+    min-width: 98px !important;
+    max-width: 98px !important;
+    gap: 5px !important;
+  }
+
+  .site-header .brand img,
+  header.site-header .brand img,
+  .site-header a.brand img,
+  header.site-header a.brand img{
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+  }
+
+  .site-header .brand > span,
+  header.site-header .brand > span,
+  .site-header .brand-copy,
+  header.site-header .brand-copy{
+    max-width: 62px !important;
+  }
+
+  .site-header .brand-title,
+  header.site-header .brand-title{
+    font-size: 11px !important;
+    letter-spacing: .08em !important;
+  }
+
+  .site-header .brand-subtitle,
+  header.site-header .brand-subtitle{
+    font-size: 4.4px !important;
+    letter-spacing: .11em !important;
+  }
+}
+
+/* Very narrow devices: keep the logo full and sacrifice text slightly */
+@media (max-width: 360px){
+  .site-header .brand,
+  header.site-header .brand{
+    width: 86px !important;
+    min-width: 86px !important;
+    max-width: 86px !important;
+  }
+
+  .site-header .brand img,
+  header.site-header .brand img{
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+  }
+
+  .site-header .brand-title,
+  header.site-header .brand-title{
+    font-size: 10px !important;
+  }
+
+  .site-header .brand-subtitle,
+  header.site-header .brand-subtitle{
+    font-size: 4px !important;
+  }
+}

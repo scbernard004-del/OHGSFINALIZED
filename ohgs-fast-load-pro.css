@@ -1,0 +1,44 @@
+/* ==========================================================
+   OHGS FAST LOAD PROFESSIONAL PATCH
+   Smaller rendering work, lazy sections, stable media sizing.
+   ========================================================== */
+
+img{
+  content-visibility:auto;
+}
+.card,
+.ohgs-new-stock-card,
+.ohgs-product-showcase-card,
+.ohgs-customer-story-card,
+.safe-monday-poster-card,
+.video-card,
+.ohgs-final-video-card,
+.section{
+  content-visibility:auto;
+  contain-intrinsic-size:1px 620px;
+}
+
+.hero img,
+.site-header img{
+  content-visibility:visible;
+}
+
+video{
+  background:#000;
+  object-fit:cover;
+}
+
+.ohgs-final-video-card video,
+.video-card video{
+  max-height:520px;
+}
+
+@media(max-width:980px){
+  .section{
+    contain-intrinsic-size:1px 760px;
+  }
+  .ohgs-final-video-card video,
+  .video-card video{
+    max-height:360px;
+  }
+}

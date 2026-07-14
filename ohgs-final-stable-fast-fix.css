@@ -1,0 +1,278 @@
+/* ==========================================================
+   OHGS FINAL STABLE FAST FIX
+   Stops infinite loading and makes header scroll animation visible.
+   This loads LAST and overrides older CSS.
+   ========================================================== */
+
+/* No loading overlay or orphan text should ever block the site */
+.loader,
+#loader,
+.ohgs-loader-screen,
+.loading,
+.loading-screen{
+  display:none !important;
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  z-index:-1 !important;
+}
+body.ohgs-site-ready,
+body.ohgs-loaded,
+html,
+body,
+main{
+  opacity:1 !important;
+  visibility:visible !important;
+}
+body{
+  overflow-x:hidden !important;
+}
+
+/* Hide orphan loading paragraphs from earlier loader markup */
+body > p:first-child{
+  display:none !important;
+}
+
+/* Stable header foundation */
+.site-header,
+header.site-header,
+.site-header.ohgs-pro-visible-header{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  position:fixed !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  z-index:2147483000 !important;
+  min-height:76px !important;
+  padding:10px clamp(14px,3vw,34px) !important;
+  gap:16px !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+  transform:translateY(0) !important;
+  background:rgba(3,10,22,.96) !important;
+  border-bottom:1px solid rgba(255,255,255,.12) !important;
+  box-shadow:0 12px 34px rgba(0,0,0,.20) !important;
+  backdrop-filter:blur(18px) saturate(1.14) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(1.14) !important;
+  transition:
+    min-height .32s cubic-bezier(.2,.8,.2,1),
+    padding .32s cubic-bezier(.2,.8,.2,1),
+    background .32s ease,
+    box-shadow .32s ease,
+    border-color .32s ease !important;
+}
+body.light .site-header,
+html[data-theme="light"] .site-header{
+  background:rgba(255,255,255,.96) !important;
+  border-bottom-color:rgba(15,23,42,.12) !important;
+}
+
+/* Prevent hidden header classes from old files */
+.site-header.hide,
+.site-header.hidden,
+.site-header.is-hidden,
+.site-header.header-hidden,
+.site-header.nav-hidden,
+.site-header.scroll-hide,
+body.header-hidden .site-header,
+body.nav-hidden .site-header,
+body.hide-header .site-header{
+  display:flex !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:translateY(0) !important;
+  pointer-events:auto !important;
+}
+
+/* Space for fixed header */
+:root{ --ohgs-stable-header:76px; }
+main{ padding-top:var(--ohgs-stable-header) !important; }
+html{ scroll-padding-top:calc(var(--ohgs-stable-header) + 18px) !important; }
+
+/* Brand and controls */
+.ohgs-final-brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  min-width:214px !important;
+  text-decoration:none !important;
+  flex:0 0 auto !important;
+}
+.ohgs-final-brand-icon{
+  width:50px !important;
+  height:50px !important;
+  min-width:50px !important;
+  display:block !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  transition:
+    width .32s cubic-bezier(.2,.8,.2,1),
+    height .32s cubic-bezier(.2,.8,.2,1),
+    min-width .32s cubic-bezier(.2,.8,.2,1),
+    transform .32s cubic-bezier(.2,.8,.2,1),
+    filter .32s ease !important;
+}
+.ohgs-final-brand-copy{
+  display:flex !important;
+  flex-direction:column !important;
+  min-width:0 !important;
+}
+.ohgs-final-brand-title{
+  font-size:30px !important;
+  line-height:.9 !important;
+  font-weight:950 !important;
+  letter-spacing:.15em !important;
+  transition:font-size .32s cubic-bezier(.2,.8,.2,1), letter-spacing .32s ease, transform .32s ease !important;
+}
+.ohgs-final-brand-subtitle{
+  margin-top:5px !important;
+  font-size:8px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  letter-spacing:.32em !important;
+  color:#00bfff !important;
+  transition:font-size .32s cubic-bezier(.2,.8,.2,1), letter-spacing .32s ease, opacity .32s ease !important;
+}
+.nav-links a,
+.header-actions .pill,
+.menu-toggle{
+  transition:transform .26s ease, min-height .32s ease, padding .32s ease, background .26s ease, box-shadow .26s ease !important;
+}
+
+/* Visible scroll animation */
+.site-header.ohgs-ultimate-scrolled{
+  min-height:60px !important;
+  padding-top:6px !important;
+  padding-bottom:6px !important;
+  background:rgba(3,10,22,.88) !important;
+  border-bottom-color:rgba(0,191,255,.26) !important;
+  box-shadow:0 18px 52px rgba(0,0,0,.32) !important;
+}
+body.light .site-header.ohgs-ultimate-scrolled,
+html[data-theme="light"] .site-header.ohgs-ultimate-scrolled{
+  background:rgba(255,255,255,.90) !important;
+  border-bottom-color:rgba(0,119,182,.20) !important;
+  box-shadow:0 18px 46px rgba(15,23,42,.16) !important;
+}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand-icon{
+  width:40px !important;
+  height:40px !important;
+  min-width:40px !important;
+  transform:scale(.94) rotate(-4deg) !important;
+  filter:drop-shadow(0 8px 18px rgba(0,191,255,.18)) !important;
+}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand-title{
+  font-size:24px !important;
+  letter-spacing:.12em !important;
+  transform:translateY(1px) !important;
+}
+.site-header.ohgs-ultimate-scrolled .ohgs-final-brand-subtitle{
+  font-size:6.5px !important;
+  letter-spacing:.24em !important;
+  opacity:.9 !important;
+}
+.site-header.ohgs-ultimate-scrolled .nav-links a{
+  min-height:32px !important;
+  transform:translateY(-1px) !important;
+}
+.site-header.ohgs-ultimate-scrolled .theme-toggle,
+.site-header.ohgs-ultimate-scrolled .lang-toggle,
+.site-header.ohgs-ultimate-scrolled .whatsapp,
+.site-header.ohgs-ultimate-scrolled .menu-toggle{
+  transform:scale(.94) translateY(-1px) !important;
+}
+
+/* subtle up/down feedback */
+.site-header.ohgs-scroll-up{
+  box-shadow:0 14px 40px rgba(0,191,255,.12), 0 18px 52px rgba(0,0,0,.28) !important;
+}
+.site-header.ohgs-scroll-down{
+  border-bottom-color:rgba(0,191,255,.32) !important;
+}
+
+/* Theme icon: one icon only */
+.theme-toggle::before,
+.theme-toggle::after{
+  content:none !important;
+  display:none !important;
+}
+.theme-toggle{
+  font-size:0 !important;
+  text-indent:0 !important;
+  overflow:hidden !important;
+}
+.theme-toggle .ohgs-theme-icon{
+  display:grid !important;
+  place-items:center !important;
+  width:100% !important;
+  height:100% !important;
+  font-size:19px !important;
+  line-height:1 !important;
+}
+
+/* Mobile */
+@media(max-width:980px){
+  :root{ --ohgs-stable-header:64px; }
+  .site-header,
+  header.site-header,
+  .site-header.ohgs-pro-visible-header{
+    min-height:64px !important;
+    padding:8px 10px !important;
+    gap:8px !important;
+  }
+  .ohgs-final-brand{
+    min-width:0 !important;
+    max-width:145px !important;
+    gap:8px !important;
+  }
+  .ohgs-final-brand-icon{
+    width:38px !important;
+    height:38px !important;
+    min-width:38px !important;
+  }
+  .ohgs-final-brand-title{
+    font-size:18px !important;
+    letter-spacing:.10em !important;
+  }
+  .ohgs-final-brand-subtitle{
+    font-size:5.5px !important;
+    letter-spacing:.18em !important;
+  }
+  .site-header.ohgs-ultimate-scrolled{
+    min-height:54px !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-icon{
+    width:31px !important;
+    height:31px !important;
+    min-width:31px !important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-title{
+    font-size:14px !important;
+    letter-spacing:.08em !important;
+  }
+  .site-header.ohgs-ultimate-scrolled .ohgs-final-brand-subtitle{
+    font-size:4px !important;
+    opacity:.75 !important;
+  }
+  .nav-links{
+    top:72px !important;
+  }
+  .site-header.ohgs-ultimate-scrolled .nav-links{
+    top:62px !important;
+  }
+}
+@media(max-width:430px){
+  .ohgs-final-brand{ max-width:128px !important; }
+}
+@media(prefers-reduced-motion:reduce){
+  .site-header,
+  .site-header *{
+    transition:none !important;
+    animation:none !important;
+  }
+}
